@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title EQFinder
+  body
+    h1 EQFinder
+    h1 Liste des séismes
+    ul
+      each earthquake in earthquakes
+        li
+          a(href='/earthquakes/' + earthquake.id)= earthquake.properties.place + ' - ' + earthquake.properties.mag

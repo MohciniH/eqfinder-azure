@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title EQFinder
+  body
+    h1 EQFinder
+    h2 Détails des séismes
+    p= 'Lieu dit: ' + earthquake.properties.place
+    p= 'URL Source : ' + earthquake.properties.url
+    p= 'Heure-Temps : ' + earthquake.iso_date
+    p= 'Magnitude : ' + earthquake.properties.mag
+    p= 'Ressenti : ' + earthquake.properties.felt
+    p= 'Type : ' + earthquake.properties.type
+    p= 'Coordonnées (Lat,Lon) : ' + earthquake.geometry.coordinates
+    p= 'Tsunami : ' + earthquake.properties.tsunami
+    p= 'Profondeur : ' + earthquake.depth
