@@ -1,2 +1,2 @@
-const baseUrl = 'http://eqfinder-onazure.com';
+const baseUrl = 'https://eqfinder-azure.azurewebsites.net/';
 module.exports = baseUrl;
