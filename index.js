@@ -12,7 +12,7 @@ app.set('view engine', 'pug');
 // Connexion à la base de données
 let client;
 
-async function connectDB() {
+/*async function connectDB() {
   try {
     const url = process.env.DB_URI; // Utilisation de la variable d'environnement DB_URI
     client = await MongoClient.connect(url, { useUnifiedTopology: true });
@@ -57,7 +57,7 @@ app.get('/earthquakes/:id', async function(req, res) {
     console.error(err);
     res.send('Une erreur est survenue.');
   }
-});
+});*/
 
 app.get('/test', function(req, res) {
     res.send('Ceci est un test');
@@ -73,5 +73,5 @@ const baseUrl = require('./baseUrl');
 
 // Lancement du serveur
 app.listen(3001, function() {
-  console.log('Le serveur est démarré sur le port 3000');
+  console.log('Le serveur est démarré sur le port 3001');
 });
