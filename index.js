@@ -65,7 +65,7 @@ app.get('/test', function(req, res) {
   
 app.get('/', function(req, res) {
     console.log('user sur /');
-    res.sendFile(path.join(__dirname, 'views', 'home.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Utilisation de la base URL à partir du fichier baseUrl.js
