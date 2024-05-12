@@ -33,7 +33,7 @@ app.use(['/earthquakes', '/earthquakes/:id'], async (req, res, next) => {
 // Route pour récupérer les données des seismes
 app.get('/earthquakes', async function(req, res) {
   try {
-    const db = client.db('earthquake2023');
+    const db = client.db('earthquake2023').limit(3);
     console.log('user sur /earthquakes');
 
     const results = await db.collection('earthquakes').find().toArray();
