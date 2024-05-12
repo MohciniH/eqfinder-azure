@@ -65,13 +65,13 @@ app.get('/test', function(req, res) {
   
 app.get('/', function(req, res) {
     console.log('user sur /');
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 // Utilisation de la base URL à partir du fichier baseUrl.js
 const baseUrl = require('./baseUrl');
 
 // Lancement du serveur
-app.listen(3000, function() {
+app.listen(3001, function() {
   console.log('Le serveur est démarré sur le port 3000');
 });
